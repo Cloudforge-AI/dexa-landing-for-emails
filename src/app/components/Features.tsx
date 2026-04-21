@@ -1,3 +1,7 @@
+"use client";
+
+import FadeIn from "./FadeIn";
+
 const features = [
   {
     icon: (
@@ -90,19 +94,20 @@ export default function Features() {
         </h2>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((f) => (
-            <div
-              key={f.title}
-              className="flex flex-col items-start rounded-xl border border-stroke bg-white p-6 shadow-[0px_2px_6px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-md"
-            >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                {f.icon}
+          {features.map((f, i) => (
+            <FadeIn key={f.title} delay={i * 100}>
+              <div
+                className="flex flex-col items-start rounded-xl border border-stroke bg-white p-6 shadow-[0px_2px_6px_rgba(0,0,0,0.08)] transition-all hover:shadow-lg hover:-translate-y-1"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  {f.icon}
+                </div>
+                <h3 className="text-lg font-bold text-darkest">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray">
+                  {f.description}
+                </p>
               </div>
-              <h3 className="text-lg font-bold text-darkest">{f.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray">
-                {f.description}
-              </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import FadeIn from "./FadeIn";
 
 type UserType = "dentist" | "patient";
 type FormStatus = "idle" | "loading" | "success" | "error";
@@ -44,6 +45,7 @@ export default function LeadForm() {
 
   return (
     <section id="lead-form" className="bg-bg py-24">
+      <FadeIn>
       <div className="mx-auto max-w-md px-6">
         <h2 className="text-center text-3xl font-extrabold tracking-tight text-darkest sm:text-4xl">
           Solicita Acceso Anticipado
@@ -124,7 +126,7 @@ export default function LeadForm() {
                 <button
                   type="button"
                   onClick={() => setUserType("patient")}
-                  className={`flex-1 rounded-[10px] border px-4 py-2.5 text-sm font-bold transition-all ${
+                  className={`cursor-pointer flex-1 rounded-[10px] border px-4 py-2.5 text-sm font-bold transition-all focus:ring-2 focus:ring-primary/30 focus:outline-none ${
                     userType === "patient"
                       ? "border-primary bg-primary/10 text-primary"
                       : "border-stroke bg-white text-gray hover:border-primary/40"
@@ -135,7 +137,7 @@ export default function LeadForm() {
                 <button
                   type="button"
                   onClick={() => setUserType("dentist")}
-                  className={`flex-1 rounded-[10px] border px-4 py-2.5 text-sm font-bold transition-all ${
+                  className={`cursor-pointer flex-1 rounded-[10px] border px-4 py-2.5 text-sm font-bold transition-all focus:ring-2 focus:ring-primary/30 focus:outline-none ${
                     userType === "dentist"
                       ? "border-primary bg-primary/10 text-primary"
                       : "border-stroke bg-white text-gray hover:border-primary/40"
@@ -157,7 +159,7 @@ export default function LeadForm() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="mt-2 flex items-center justify-center gap-2 rounded-[10px] px-6 py-3.5 text-base font-bold text-white shadow-lg transition-all hover:opacity-90 hover:shadow-xl disabled:opacity-60"
+              className="cursor-pointer mt-2 flex items-center justify-center gap-2 rounded-[10px] px-6 py-3.5 text-base font-bold text-white shadow-lg transition-all hover:opacity-90 hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ background: "var(--gradient-btn)" }}
             >
               {status === "loading" ? (
@@ -190,6 +192,7 @@ export default function LeadForm() {
           </form>
         )}
       </div>
+      </FadeIn>
     </section>
   );
 }
