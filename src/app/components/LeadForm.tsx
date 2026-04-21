@@ -23,7 +23,7 @@ export default function LeadForm() {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, userType }),
+          body: JSON.stringify({ name, email, type: userType }),
         }
       );
 
