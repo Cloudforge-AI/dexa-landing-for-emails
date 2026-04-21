@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg font-medium leading-relaxed text-gray sm:text-xl lg:mx-0 mx-auto">
-              Analisis instantaneo con clasificacion ICDAS II. Para dentistas y
+              Análisis instantáneo con clasificación ICDAS II. Para dentistas y
               pacientes.
             </p>
 

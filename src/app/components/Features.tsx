@@ -21,7 +21,7 @@ const features = [
     ),
     title: "IA Avanzada",
     description:
-      "Modelos de vision entrenados para detectar caries con precision ICDAS II.",
+      "Modelos de visión entrenados para detectar caries con precisión ICDAS II.",
   },
   {
     icon: (
@@ -41,7 +41,7 @@ const features = [
     ),
     title: "Resultados al Instante",
     description:
-      "Sube una imagen dental y obten un diagnostico en segundos.",
+      "Sube una imagen dental y obtén un diagnóstico en segundos.",
   },
   {
     icon: (
@@ -61,7 +61,7 @@ const features = [
     ),
     title: "Para Profesionales",
     description:
-      "Herramienta de apoyo diagnostico para dentistas y clinicas.",
+      "Herramienta de apoyo diagnóstico para dentistas y clínicas.",
   },
   {
     icon: (
@@ -81,7 +81,7 @@ const features = [
     ),
     title: "Seguro y Privado",
     description:
-      "Datos encriptados y protegidos bajo estandares de salud.",
+      "Datos encriptados y protegidos bajo estándares de salud.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function Features() {
     <section id="features" className="bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center text-3xl font-extrabold tracking-tight text-darkest sm:text-4xl">
-          ¿Por que DexaVision?
+          ¿Por qué DexaVision?
         </h2>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

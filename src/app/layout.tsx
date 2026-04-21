@@ -9,9 +9,9 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "DexaVision — Diagnostico Dental con IA",
+  title: "DexaVision — Diagnóstico Dental con IA",
   description:
-    "Plataforma de deteccion de caries dental con Inteligencia Artificial. Analisis instantaneo con clasificacion ICDAS II para dentistas y pacientes.",
+    "Plataforma de detección de caries dental con Inteligencia Artificial. Análisis instantáneo con clasificación ICDAS II para dentistas y pacientes.",
   icons: {
     icon: "/dexa_alternative_landinglogo.png",
   },

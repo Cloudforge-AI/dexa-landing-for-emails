@@ -38,7 +38,7 @@ export default function LeadForm() {
       setErrorMsg(
         err instanceof Error
           ? err.message
-          : "Ocurrio un error. Intenta de nuevo."
+          : "Ocurrió un error. Intenta de nuevo."
       );
     }
   };
@@ -51,7 +51,7 @@ export default function LeadForm() {
           Solicita Acceso Anticipado
         </h2>
         <p className="mt-4 text-center text-base leading-relaxed text-gray">
-          Se de los primeros en probar DexaVision. Dejanos tu correo y te
+          Sé de los primeros en probar DexaVision. Déjanos tu correo y te
           contactaremos.
         </p>
 
@@ -74,7 +74,7 @@ export default function LeadForm() {
               ¡Registro exitoso!
             </p>
             <p className="text-sm text-gray">
-              Te contactaremos pronto con mas informacion.
+              Te contactaremos pronto con más información.
             </p>
           </div>
         ) : (
